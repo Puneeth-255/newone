@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EPSP | Training</title>
+  <link rel="stylesheet" href="training.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Training</div>
+    <nav class="nav-links">
+      <a href="index.html">Dashboard</a>
+      <a href="campaigns.html">Campaigns</a>
+      <a href="templates.html">Templates</a>
+      <a href="analytics.html">Analytics</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="training-list">
+      <h2>User Training Status</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Completed On</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jane Doe</td>
+            <td>jane@company.com</td>
+            <td><span class="status done">Completed</span></td>
+            <td>2025-08-20</td>
+          </tr>
+          <tr>
+            <td>John Smith</td>
+            <td>john@company.com</td>
+            <td><span class="status pending">Pending</span></td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="assign-training">
+      <h2>Assign Training</h2>
+      <form id="assignForm">
+        <input type="email" placeholder="User Email" required />
+        <select required>
+          <option value="">Select Module</option>
+          <option value="Phishing 101">Phishing 101</option>
+          <option value="Security Awareness">Security Awareness</option>
+        </select>
+        <button type="submit">Assign</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="training.js"></script>
+</body>
+</html>
