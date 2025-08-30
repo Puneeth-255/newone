@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phishing Dashboard</title>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <h1>Launch Phishing Campaign</h1>
+  <form id="campaignForm">
+    Campaign Name: <input name="name"><br>
+    Subject: <input name="subject"><br>
+    Template (HTML):<br>
+    <textarea name="template" rows="4" cols="40"><p>Click <a href='{{ link }}'>here</a> to login securely.</p></textarea><br>
+    Emails (comma-separated):<br>
+    <input name="emails"><br>
+    <button type="submit">Launch</button>
+  </form>
+</body>
+</html>
